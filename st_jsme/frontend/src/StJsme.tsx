@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Jsme } from 'jsme-react'
 
 import {
@@ -15,7 +15,7 @@ interface JsmeArgs {
 
 
 export class StJsme extends  StreamlitComponentBase {
-  logSmiles(smiles) {
+  logSmiles(smiles: string) {
     console.log(smiles)
     Streamlit.setComponentValue(smiles)
   }
